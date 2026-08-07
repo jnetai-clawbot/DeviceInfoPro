@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A2E"
+    android:paddingBottom="80dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Info Pro"
+            android:textColor="#E94560"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hardware, software & network details"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <Button android:id="@+id/btnHardware" android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1" android:text="Hardware" android:textColor="#FFFFFF" android:textSize="11sp" android:backgroundTint="#16213E" android:layout_marginEnd="4dp" />
+            <Button android:id="@+id/btnSystem" android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1" android:text="System" android:textColor="#FFFFFF" android:textSize="11sp" android:backgroundTint="#16213E" android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <Button android:id="@+id/btnDisplay" android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1" android:text="Display" android:textColor="#FFFFFF" android:textSize="11sp" android:backgroundTint="#16213E" android:layout_marginEnd="4dp" />
+            <Button android:id="@+id/btnBattery" android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1" android:text="Battery" android:textColor="#FFFFFF" android:textSize="11sp" android:backgroundTint="#16213E" android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <Button android:id="@+id/btnStorage" android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1" android:text="Storage" android:textColor="#FFFFFF" android:textSize="11sp" android:backgroundTint="#16213E" android:layout_marginEnd="4dp" />
+            <Button android:id="@+id/btnNetwork" android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1" android:text="Network" android:textColor="#FFFFFF" android:textSize="11sp" android:backgroundTint="#16213E" android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <Button android:id="@+id/btnSensors" android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1" android:text="Sensors" android:textColor="#FFFFFF" android:textSize="11sp" android:backgroundTint="#16213E" android:layout_marginEnd="4dp" />
+            <Button android:id="@+id/btnAll" android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1" android:text="All Info" android:textColor="#FFFFFF" android:textSize="11sp" android:backgroundTint="#0F3460" android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"
+            android:indeterminateTint="#E94560"
+            android:layout_gravity="center_horizontal" />
+
+        <ScrollView
+            android:id="@+id/scrollResults"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="#0F3460"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap a category to view device information..."
+                android:textColor="#CCCCCC"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="2dp" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="12dp"
+            android:text="About"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:backgroundTint="#E94560" />
+
+    </LinearLayout>
+</ScrollView>
