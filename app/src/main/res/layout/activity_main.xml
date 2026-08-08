@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hardware, software & network details"
+            android:text="Hardware, software &amp; network details"
             android:textColor="#AAAAAA"
             android:textSize="12sp"
             android:layout_marginBottom="16dp"
